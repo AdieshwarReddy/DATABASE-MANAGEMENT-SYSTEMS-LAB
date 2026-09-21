@@ -1,4 +1,3 @@
-
 CREATE VIEW high_salary_employees AS
 
 SELECT
