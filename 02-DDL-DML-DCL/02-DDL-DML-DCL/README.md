@@ -1,24 +1,30 @@
-# Experiment 2 - DDL, DML and DCL Commands
+DML - Data Manipulation Language
 
-## Aim
-
-To understand and practice DDL, DML and DCL commands.
-
-## DDL - Data Definition Language
-
-DDL commands are used to define database structure.
+DML commands modify data stored inside tables.
 
 Commands:
 
-- CREATE
-- ALTER
-- DROP
-- TRUNCATE
+INSERT
+UPDATE
+DELETE
 
 Example:
 
-```sql
-CREATE TABLE students (
-    student_id INT PRIMARY KEY,
-    student_name VARCHAR(100)
-);
+INSERT INTO students
+VALUES (1, 'Adhi');
+DQL - Data Query Language
+
+SELECT is used to retrieve data.
+
+SELECT * FROM students;
+DCL - Data Control Language
+
+DCL controls database permissions.
+
+Commands:
+
+GRANT
+REVOKE
+Conclusion
+
+DDL defines database structure, DML modifies data and DCL manages permissions.
