@@ -1,1 +1,70 @@
+# Experiment 3 - ER Diagram
 
+## Aim
+
+To design an Entity Relationship Diagram for a College Database System.
+
+## Entities
+
+### Student
+
+Attributes:
+
+- student_id
+- student_name
+- email
+- department
+
+### Course
+
+Attributes:
+
+- course_id
+- course_name
+- credits
+
+### Faculty
+
+Attributes:
+
+- faculty_id
+- faculty_name
+- department
+
+## Relationships
+
+Student enrolls in Course.
+
+Faculty teaches Course.
+
+## Relationship Structure
+
+Student
+↓
+Enrolls
+↓
+Course
+
+Faculty
+↓
+Teaches
+↓
+Course
+
+## Cardinality
+
+A student can enroll in many courses.
+
+A course can contain many students.
+
+Therefore:
+
+Student ↔ Course
+
+is a Many-to-Many relationship.
+
+A faculty member can teach multiple courses.
+
+## Conclusion
+
+ER diagrams help us visually understand entities, attributes and relationships before creating database tables.
