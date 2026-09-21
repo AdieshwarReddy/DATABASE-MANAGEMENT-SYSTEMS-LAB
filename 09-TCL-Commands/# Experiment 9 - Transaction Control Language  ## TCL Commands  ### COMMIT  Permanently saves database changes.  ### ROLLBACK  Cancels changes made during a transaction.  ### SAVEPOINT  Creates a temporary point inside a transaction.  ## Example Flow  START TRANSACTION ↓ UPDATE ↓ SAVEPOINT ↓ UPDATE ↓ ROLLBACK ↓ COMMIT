@@ -1,0 +1,29 @@
+# Experiment 9 - Transaction Control Language
+
+## TCL Commands
+
+### COMMIT
+
+Permanently saves database changes.
+
+### ROLLBACK
+
+Cancels changes made during a transaction.
+
+### SAVEPOINT
+
+Creates a temporary point inside a transaction.
+
+## Example Flow
+
+START TRANSACTION
+↓
+UPDATE
+↓
+SAVEPOINT
+↓
+UPDATE
+↓
+ROLLBACK
+↓
+COMMIT
